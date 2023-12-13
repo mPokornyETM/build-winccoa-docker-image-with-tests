@@ -114,7 +114,7 @@ jobs:
         working-directory: ./build-docker
         run: |
           # specify targets from Dockerfile_install here
-          for target in api server uiserver; do
+          for target in api server uiserver full; do
             tag_suffix=${target}
             image_name="${DOCKER_IMAGE}:v${{ steps.get_version.outputs.version }}-${tag_suffix}"
 

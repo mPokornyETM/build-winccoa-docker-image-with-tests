@@ -23,3 +23,6 @@ RUN sudo apt-get -y install winccoa-\*-baseserver
 
 FROM winccoaserver AS winccoauiserver
 RUN sudo apt-get -y install winccoa-\*-baseui winccoa-\*-baseshortcuts winccoa-\*-desktopuiserver
+
+FROM winccoaserver AS winccoaall
+RUN sudo apt-get -y install winccoa-\*

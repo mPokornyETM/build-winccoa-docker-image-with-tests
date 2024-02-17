@@ -1,6 +1,7 @@
 name: Generate and upload WinCC OA image  
 
 on:
+  workflow_dispatch:
   push:
     branches: [ "main", "release/*", "develop", "develop/*" ]
 #  pull_request:
